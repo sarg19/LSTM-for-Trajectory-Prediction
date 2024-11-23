@@ -130,7 +130,7 @@ class TrajectoryDataset(Dataset):
                 count = count+1
     def normalize_data(self):
         A = [list(x) for x in zip(*(self.X_frames))]
-        A = torch.tensor(A)
+        A = torch.tensor(np.array(A))
         A = A.view(-1,A.shape[2])
         print('A:',A.shape)
         self.mn = torch.mean(A,dim=0)

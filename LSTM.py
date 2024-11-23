@@ -182,7 +182,7 @@ def showPlot(points):
     plt.show()
 
 train_iter = iter(Training_generator)
-x, y = train_iter.next()
+x, y = next(train_iter)
 print(x.shape)
 hidden_size = 256
 Prednet = NNPred(x.shape[2], y.shape[2],hidden_size, BatchSize)
