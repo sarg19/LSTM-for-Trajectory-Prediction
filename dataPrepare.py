@@ -12,7 +12,7 @@ import torch
 from torch.utils.data import Dataset, DataLoader
 
 import matplotlib.pyplot as plt
-plt.switch_backend('TkAgg')
+plt.switch_backend('Agg')
 import matplotlib.ticker as ticker
 import numpy as np
 BatchSize = 128
