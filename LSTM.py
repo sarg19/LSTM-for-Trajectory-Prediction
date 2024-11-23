@@ -189,7 +189,7 @@ Prednet = NNPred(x.shape[2], y.shape[2],hidden_size, BatchSize)
 
 print(device)
 
-TRAN_TAG = False
+TRAN_TAG = True
 if TRAN_TAG:
     if path.exists("checkpoint.pth.tar"):
         Prednet.load_state_dict(torch.load('checkpoint.pth.tar'))
